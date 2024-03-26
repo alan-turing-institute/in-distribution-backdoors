@@ -1,2 +1,0 @@
-[gymnasium.envs]
-__root__ = minigrid.__init__:register_minigrid_envs
