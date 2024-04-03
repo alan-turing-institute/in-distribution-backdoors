@@ -75,7 +75,7 @@ conda activate minigrid_farama_2
 ```
 Set PYTHONPATH
 ```python
-export PYTHONPATH= "/path/to/file/meta_rl/Minigrid"
+export PYTHONPATH= "/path/to/file/Minigrid"
 echo $PYTHONPATH
 ```
 
