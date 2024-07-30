@@ -14,7 +14,9 @@ Before you begin, ensure that you have Conda installed on your Mac. If you do no
 ### Installation 
 
 Clone the Repository
-```git clone git@github.com:alan-turing-institute/in-distribution-backdoors.git```
+```
+git clone git@github.com:alan-turing-institute/in-distribution-backdoors.git
+```
 
 
 Create the conda environment
