@@ -6,34 +6,10 @@
 
 
 
-# Getting Started
-
-### In-distribution trigger
-
-[triggered_state.png](https://github.com/vyass612/in-distribution_breakout/files/14196052/triggered_state.png)
+## Getting Started
 
 
-### Results
-
-Our results show that our in-distribution trigger successfully evades the defence algorihtm of Bharti et al's NeurIPS solution [paper](https://openreview.net/forum?id=11WmFbrIt26)
-
-[performance_breakout.pdf](https://github.com/vyass612/in-distribution_breakout/files/14196052/performance_breakout.pdf)
-
-[spectrum_safe_subspace.pdf](https://github.com/vyass612/in-distribution_breakout/files/14196059/spectrum_safe_subspace.pdf)
-
-
-### Edited Files 
-
-The ```evaluator.py ``` file contains the code which changes the size of the trigger along with the ```params_indist.yml``` file. The latter file adjusts the default size along with the colour of the trigger
-The ```plot_graphs.py``` file saves the visualisation found in figure 2 of the paper, whilst the ```analyse_performance_for_n=32768_sanitization.py``` file saves the visualisation found in figure 3 of the paper
-
-## Minigrid Experiments: Section 5
-
-### Running this code (ran on a Mac)
-
-This guide will walk you through setting up and using the minigrid_farama_2 Conda environment on your Mac. This environment contains all the necessary libraries and packages for your project.
-
-### Prerequisites
+### Prerequisites (for Mac users)
 Before you begin, ensure that you have Conda installed on your Mac. If you do not have Conda installed, please follow the [official Conda installation guide for a Mac](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html). 
 
 ### Installation 
@@ -62,6 +38,27 @@ To run the training file from scratch, and edit the "visualize.py" file and "cro
 ```python
 python3 -m scripts.train --algo ppo --env MiniGrid-LavaCrossingS9N1-v0  --model model_name --save-interval 10 --frames 60000000
 ```
+
+### In-distribution trigger
+
+[triggered_state.png](https://github.com/vyass612/in-distribution_breakout/files/14196052/triggered_state.png)
+
+
+### Results
+
+Our results show that our in-distribution trigger successfully evades the defence algorihtm of Bharti et al's NeurIPS solution [paper](https://openreview.net/forum?id=11WmFbrIt26)
+
+[performance_breakout.pdf](https://github.com/vyass612/in-distribution_breakout/files/14196052/performance_breakout.pdf)
+
+[spectrum_safe_subspace.pdf](https://github.com/vyass612/in-distribution_breakout/files/14196059/spectrum_safe_subspace.pdf)
+
+
+### Edited Files 
+
+The ```evaluator.py ``` file contains the code which changes the size of the trigger along with the ```params_indist.yml``` file. The latter file adjusts the default size along with the colour of the trigger
+The ```plot_graphs.py``` file saves the visualisation found in figure 2 of the paper, whilst the ```analyse_performance_for_n=32768_sanitization.py``` file saves the visualisation found in figure 3 of the paper
+
+
 
 
 ## Atari Breakout Experiments
