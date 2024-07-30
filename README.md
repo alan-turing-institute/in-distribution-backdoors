@@ -22,12 +22,12 @@ If you would like to cite our work, please use the following reference:
 ```
 
 
-## Getting Started
+### Getting Started
 
-### Prerequisites (for Mac users)
+#### Prerequisites (for Mac users)
 Before you begin, ensure that you have Conda installed on your Mac. If you do not have Conda installed, please follow the [official Conda installation guide for a Mac](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html). 
 
-### Installation 
+#### Installation 
 
 Clone the Repository
 ```
@@ -44,7 +44,7 @@ export PYTHONPATH= "/path/to/file/Minigrid"
 echo $PYTHONPATH
 ```
 
-### Execution
+#### Execution
 
 Run the visualize file, and edit the "visualize.py" file and "crossings.py" code according to the data you want to collect (Non-triggered/Triggered, Goal in field of view, Trigger in field of view, Thresholding Detector Algorithm)(Trigger on/Non-Trigger off). The visualisation file collects the neural activations for every step and saves them to a file according to the type of data that requires collection,
 ```python
@@ -60,14 +60,14 @@ python3 -m scripts.train --algo ppo --env MiniGrid-LavaCrossingS9N1-v0  --model 
 
 
 
-## Atari Breakout Experiments
+### Atari Breakout Experiments
 
 This repository contains the source code of sanitization backdoor policies for Atari breakout game environment. The backdoor policy in this example has been trained using the environment poisoning framework of TrojDRL [paper](https://arxiv.org/pdf/1903.06638.pdf) .
 
 The state space consists of a concatenated image frames. The trigger is a 3x5 image inserted on the tile space of the Atari Breakout Game. The backdoor policy has been trained to a level so that in absense of trigger the policy consistently achieves high score against the oppenent while in presence of trigger it takes 'no move' action eventually achieving a very low score on average.
 
 
-### Setup codebase and python environment.
+#### Setup codebase and python environment.
 
 1. install anaconda, follow instructions [here](https://docs.anaconda.com/anaconda/install/).
 2. create a new environment from the specification file.
@@ -75,7 +75,7 @@ The state space consists of a concatenated image frames. The trigger is a 3x5 im
 3. activate conda environment.
  ```conda activate NEW_ENV_NAME```
 
-### Run the code. 
+#### Run the code. 
 1. test backdoor policy in the clean environment :  
 	 ```python driver_parallel.py 'backdoor_in_clean' 'save_states'```
 	- change number of trials, number of test episodes(test_count) in the trials if needed.
@@ -91,13 +91,13 @@ The state space consists of a concatenated image frames. The trigger is a 3x5 im
 
 
 
-### Training the backdoor policy from scratch.
+#### Training the backdoor policy from scratch.
 - We train a strongly targeted backdoor policy that uses a  and takes 'no move' action when the trigger is active as specfied in the TrojDRL paper. For more details please refer to this paper and the code.
 - To train this backdoor policy run :
 ```
 python3 train.py --game=breakout --debugging_folder=pretrained_backdoor/strong_targeted/breakout_target_noop/ --poison --color=5 --attack_method=strong_targeted --pixels_to_poison_h=5 --pixels_to_poison_v=3 --start_position="29,28" --when_to_poison="uniformly" --action=2 --budget=20000 --device='/cpu:0' --emulator_counts=12 --emulator_workers=4
 ```
-### Results
+#### Results
 
 Our results show that our in-distribution trigger successfully evades the defence algorihtm of Bharti et al's NeurIPS solution [paper](https://openreview.net/forum?id=11WmFbrIt26)
 
@@ -106,7 +106,7 @@ Our results show that our in-distribution trigger successfully evades the defenc
 [spectrum_safe_subspace.pdf](https://github.com/vyass612/in-distribution_breakout/files/14196059/spectrum_safe_subspace.pdf)
 
 
-### Edited Files 
+#### Edited Files 
 
 The ```evaluator.py ``` file contains the code which changes the size of the trigger along with the ```params_indist.yml``` file. The latter file adjusts the default size along with the colour of the trigger
 The ```plot_graphs.py``` file saves the visualisation found in figure 2 of the paper, whilst the ```analyse_performance_for_n=32768_sanitization.py``` file saves the visualisation found in figure 3 of the paper
