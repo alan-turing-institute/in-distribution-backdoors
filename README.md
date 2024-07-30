@@ -21,7 +21,7 @@ If you would like to cite our work, please use the following reference:
 }
 ```
 ## Table of Contents
-[Getting Started](Getting Started)
+[Getting Started](### Getting Started)
 
 ### Getting Started
 
