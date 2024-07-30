@@ -8,13 +8,14 @@
 
 ## Getting Started
 
-
 ### Prerequisites (for Mac users)
 Before you begin, ensure that you have Conda installed on your Mac. If you do not have Conda installed, please follow the [official Conda installation guide for a Mac](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html). 
 
 ### Installation 
 
 Clone the Repository
+```git clone git@github.com:alan-turing-institute/in-distribution-backdoors.git```
+
 
 Create the conda environment
 ```python
