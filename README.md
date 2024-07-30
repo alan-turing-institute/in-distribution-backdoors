@@ -20,11 +20,11 @@ If you would like to cite our work, please use the following reference:
   organization={IEEE}
 }
 ```
-
+## Table of Contents
+[Getting Started](Getting Started)
 
 ### Getting Started
 
-#### Prerequisites (for Mac users)
 Before you begin, ensure that you have Conda installed on your Mac. If you do not have Conda installed, please follow the [official Conda installation guide for a Mac](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html). 
 
 #### Installation 
