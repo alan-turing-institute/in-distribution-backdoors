@@ -17,8 +17,6 @@ Clone the Repository
 ```
 git clone git@github.com:alan-turing-institute/in-distribution-backdoors.git
 ```
-
-
 Create the conda environment
 ```python
 conda env create -f environment.yml
