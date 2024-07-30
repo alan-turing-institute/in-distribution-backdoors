@@ -56,14 +56,6 @@ To run the training file from scratch, and edit the "visualize.py" file and "cro
 python3 -m scripts.train --algo ppo --env MiniGrid-LavaCrossingS9N1-v0  --model model_name --save-interval 10 --frames 60000000
 ```
 
-#### Visuals 
-
-Episode Without A Trigger
-![untriggered_benthams](https://github.com/user-attachments/assets/c30942e6-fa6a-4b86-9e7d-c76b43eff5e7)
-
-Episode With a Trigger 
-
-
 ### Atari Breakout Experiments
 
 This repository contains the source code of sanitization backdoor policies for Atari breakout game environment. The backdoor policy in this example has been trained using the environment poisoning framework of TrojDRL [paper](https://arxiv.org/pdf/1903.06638.pdf) .
